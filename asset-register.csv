@@ -1,0 +1,41 @@
+asset_id,path,purpose,version,scope,status,rights_state,source
+AS001,assets/logos/supabrand-primary.svg,"Primary horizontal masterbrand, primary",1.0,global; geometry S03,released,synthetic; commissioned for this corpus,S03
+AS002,assets/logos/supabrand-signal.svg,"Primary horizontal masterbrand, signal",1.0,global; geometry S03,released,synthetic; commissioned for this corpus,S03
+AS003,assets/logos/supabrand-reversed.svg,"Primary horizontal masterbrand, reversed",1.0,global; geometry S03,released,synthetic; commissioned for this corpus,S03
+AS004,assets/logos/supabrand-stacked.svg,Secondary narrow-format masterbrand,1.0,global; min visible 96 px / 24 mm,released,synthetic; commissioned for this corpus,S03
+AS005,assets/logos/compact-dark.svg,Compact open-track sign,1.0,avatars and small hardware; established brand context,released,synthetic; commissioned for this corpus,S03
+AS006,assets/logos/compact-reversed.svg,Compact open-track sign,1.0,avatars and small hardware; established brand context,released,synthetic; commissioned for this corpus,S03
+AS007,assets/subbrands/vela-endorsed.svg,Endorsed VELA logo,1.0,subbrand product communication,released,synthetic; commissioned for this corpus,S03;S07
+AS008,assets/subbrands/pico-endorsed.svg,Endorsed PICO logo,1.0,subbrand product communication,released,synthetic; commissioned for this corpus,S03;S07
+AS009,assets/subbrands/field-endorsed.svg,Endorsed FIELD logo,1.0,subbrand product communication,released,synthetic; commissioned for this corpus,S03;S07
+AS010,assets/subbrands/dockgrid-endorsed.svg,Endorsed DOCKGRID logo,1.0,subbrand product communication,released,synthetic; commissioned for this corpus,S03;S07
+AS011,assets/subbrands/dockgrid-engraving.svg,Unendorsed N6 connector-bay engraving,1.0,N6 connector-bay engraving only; min 18 mm,released,synthetic; commissioned for this corpus,S19
+AS012,assets/partners/orbital-mesh-lockup.svg,ORBITAL MESH English relationship lockup,1.0,"territories, channels and dates per S08",released,synthetic artwork; fictional grant conditions in S08,S08
+AS013,assets/partners/viaforma-lockup.svg,VIAFORMA English relationship lockup,1.0,"territories, channels and dates per S08",retired,synthetic artwork; fictional grant conditions in S08,S08
+AS014,assets/partners/orbital-mesh-wordmark.svg,Partner wordmark master,1.0,requires placement rights S08,released,synthetic artwork; conditional name-and-mark rights S08,S08
+AS015,assets/partners/viaforma-wordmark.svg,Partner wordmark master,1.0,requires placement rights S08,retired,synthetic artwork; conditional name-and-mark rights S08,S08
+AS016,assets/icons/bicycle.svg,bicycle outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS017,assets/icons/battery.svg,battery outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS018,assets/icons/charging.svg,charging outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS019,assets/icons/cargo.svg,cargo outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS020,assets/icons/route.svg,route outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS021,assets/icons/repair.svg,repair outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS022,assets/icons/arrow-right.svg,arrow-right outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS023,assets/icons/care.svg,care outline icon,1.0,24-unit system; UI and editorial; label ambiguous functions,released,synthetic; commissioned for this corpus,S03
+AS024,assets/colours/palette.svg,Labelled screen palette,1.0,screen roles; print requires proof,released,synthetic; commissioned for this corpus,S03;S04
+AS025,assets/colours/digital-tokens.css,CSS colour and typography starting tokens,1.0,web/product/ecommerce/paid HTML display,released,synthetic; commissioned for this corpus,S04
+AS026,assets/examples/city-bicycle-study.svg,Concept bicycle illustration for agency layout,1.0,illustration only; not engineering/product photography,released,synthetic; commissioned for this corpus,S03
+AS027,assets/examples/vela-bicycle-study.svg,Premium bicycle composition,1.0,VELA concept illustration; no performance inference,released,synthetic; commissioned for this corpus,S11
+AS028,assets/examples/pico-scooter-study.svg,Scooter concept illustration,1.0,PICO illustration; no road-use representation,released,synthetic; commissioned for this corpus,S12
+AS029,assets/examples/dockgrid-station-study.svg,Six-bay charging station concept,1.0,DOCKGRID B2B illustration; not installation drawing,released,synthetic; commissioned for this corpus,S13
+AS030,assets/examples/field-cargo-study.svg,Professional cargo-cycle concept,1.0,FIELD illustration; not load geometry,released,synthetic; commissioned for this corpus,S13
+AS031,assets/examples/everyday-rider-placeholder.svg,Everyday / rider at rest photograph brief,1.0,production placeholder; not final campaign artwork,placeholder,placeholder only; no photographed person or acquired image rights,S03;S08;S23
+AS032,assets/examples/workshop-placeholder.svg,Care / workshop detail photograph brief,1.0,production placeholder; not final campaign artwork,placeholder,placeholder only; no acquired photographic rights,S03;S08;S23
+AS033,assets/examples/om-commuter-portrait-placeholder.svg,OM commuter portrait / reserved photograph brief,1.0,production placeholder; not final campaign artwork,placeholder,unresolved; separate image-rights schedule absent,S03;S08;S23
+AS034,assets/templates/product-card.html,Responsive product page / City C2,1.0,AT de-AT product website; static review sample,released,synthetic; commissioned for this corpus,S04;S07
+AS035,assets/templates/social-city-2026.svg,4:5 campaign composition example,1.0,AC-26; City C2; AT/DE/NL Instagram; 2026-08-15 to 2026-10-31; English NL version,released,synthetic; commissioned for this corpus,S15
+AS036,assets/templates/social-story.svg,9:16 PICO editorial layout,1.0,PICO; Austria consumer; no quantified claim; sample only,released,synthetic; commissioned for this corpus,S05;S12
+AS037,assets/templates/presentation-cover.svg,16:9 office cover example,1.0,new 2026 corporate presentations; sample composition,released,synthetic; commissioned for this corpus,S02;S21
+AS038,assets/templates/trade-show-panel.html,Professional trade-show review panel,1.0,DOCKGRID; Germany; 2026-09-20; English bilingual headline,review example,synthetic; commissioned for this corpus,S08;S13;S23
+AS039,assets/templates/print-brochure-spread.svg,Landscape brochure spread,1.0,masterbrand 2026; layout example; RGB preview not press-ready,released,synthetic; commissioned for this corpus,S02;S03
+AS040,assets/examples/font-production-note.html,Editorial type exploration record,1.0,Supa Grotesk Trial; no font binary or released licence,reference only,unresolved; proposed font licence not supplied; HTML itself uses system fonts,S03;S11
