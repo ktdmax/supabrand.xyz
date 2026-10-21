@@ -1,0 +1,4 @@
+profile: task.check.on-brand
+scope: {markets: [DE], locales: [de-DE], jurisdictions: [DE], audiences: [consumer], productFamilies: [city], channels: [print]}
+expectBlocked: false
+expectation: On-brand check for a German print asset. All three prohibition rules except the city-scoped one are global; open items (font licence, portrait rights) surface as informational caveats.

@@ -1,0 +1,130 @@
+# SYNTHETIC TEST DATA. Company records. Sites, headcount and organisation details beyond the existing fixture are invented.
+elements:
+- id: company.profile
+  family: context
+  kind: fact-sheet
+  domain: company
+  nature: fact
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/01-corporate-brand-guidelines-2024.md", "supabrand:sources/22-press-and-corporate-communications.md"]
+  value:
+    name: SUPABRAND Mobility SE
+    legalForm: Societas Europaea (SE), privately held
+    headquarters: Vienna, Austria
+    founded: 2016
+    founders: A frame engineer, a service designer and a fleet mechanic (fictional)
+    businessLines: Bicycles (City, Allroad), professional systems (Cargo, Node), electric scooters (Glide), SECOND MILE service programme
+    shortName: SUPABRAND
+    brandAddress: supabrand.xyz (fictional identifier; no domain ownership asserted)
+  caveats: ["No portfolio-wide Austrian-made origin claim: components and final assembly are multi-site."]
+  relatedTo: [company.sites, company.boilerplate]
+
+- id: company.sites
+  family: context
+  kind: fact-sheet
+  domain: company
+  nature: fact
+  state: defined
+  authority: binding
+  sourceRefs: ["synthetic:company-fact-book-2026"]
+  value:
+    name: SUPABRAND operating sites 2026 (synthetic)
+    headquarters: Vienna (AT) — group functions, Brand Operations, Product Council
+    assembly: [Vienna-Simmering (AT) — City and Allroad final assembly, "Brno (CZ) — FIELD F4 and PICO G1 final assembly, DOCKGRID N6 integration"]
+    serviceHubs: [Munich (DE) — SECOND MILE and Professional Systems service hub DACH, Lyon (FR) — service hub France/Italy, Utrecht (NL) — Benelux fleet service]
+    salesOffices: [Berlin, Zurich, Paris, Milan, London, Seoul, Portland (US)]
+  caveats: ["Site list is a synthetic fixture fact; it does not support any 'made in' origin wording."]
+
+- id: company.headcount-2025
+  family: context
+  kind: fact-sheet
+  domain: company
+  nature: fact
+  state: defined
+  authority: binding
+  sourceRefs: ["synthetic:company-fact-book-2026"]
+  validity: {from: "2026-03-01T00:00:00Z", to: "2027-03-01T00:00:00Z"}
+  value:
+    name: Group headcount at 31 December 2025
+    employeesFte: 1240
+    basis: Full-time equivalents, all consolidated entities, excluding agency staff.
+    owner: Finance Controls
+  caveats: ["Corporate reporting figure; not for product or market copy."]
+
+- id: company.organisation
+  family: context
+  kind: note
+  domain: company
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:source-register.csv", "synthetic:company-fact-book-2026"]
+  value:
+    summary: Functions that own knowledge in this world and sign releases.
+    functions:
+      Product Council: commercial names, range releases (Owen Park)
+      Claims Review: claim wording, evidence acceptance
+      Vehicle Validation: performance and mass ratings
+      Commercial Legal / Rights Counsel: warranties, partner grants (Jonas Reed)
+      Corporate Affairs: press releases, boilerplate (Priya Lenz)
+      Finance Controls: financial facts, registrations
+      Impact Office: emissions, SECOND MILE claims
+      Partnerships / Alliance desk: partner names and marks (Elin Radu)
+      Professional Systems: FIELD and DOCKGRID B2B sales and installation
+      Consumer Marketing: campaigns, consumer channels
+      Market offices: local language and trade presentation (Lena Wirth DE, Amélie Perrin FR, Noa Keller CH)
+      Fleet Analytics: pilot and fleet data
+      Service Operations: SECOND MILE workshop network
+  relatedTo: [communication.press-workflow]
+
+- id: company.boilerplate
+  family: context
+  kind: note
+  domain: company
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/22-press-and-corporate-communications.md"]
+  validity: {from: "2026-08-12T00:00:00Z", to: null}
+  value:
+    text: SUPABRAND Mobility SE is a Vienna-headquartered mobility manufacturer building bicycles and selected mobility systems for people and professional operators. The SUPABRAND portfolio includes VELA, PICO, FIELD and DOCKGRID. Its City and Allroad bicycles are available in twelve markets. Learn more at supabrand.xyz.
+    rules: Use the company name at first formal mention, SUPABRAND thereafter. Do not describe the organisation as Austrian-made across its range. Do not turn the internal hidden-champion ambition into an external ranking or market-leadership claim.
+  dependsOn: [claim.c01-twelve-markets]
+
+- id: company.history
+  family: context
+  kind: note
+  domain: company
+  nature: knowledge
+  state: defined
+  authority: informational
+  sourceRefs: ["supabrand:sources/01-corporate-brand-guidelines-2024.md", "supabrand:sources/08-partnership-use-notes.md", "synthetic:company-fact-book-2026"]
+  value:
+    timeline:
+      "2016": Founded in Vienna; first City prototypes.
+      "2019": First City series (later City One) and dealer network in AT and DE.
+      "2022": City One launch decks; VIAFORMA neighbourhood workshop programme starts (September).
+      "2023": FIELD F4 enters fleet pilots; Brno assembly opens (synthetic).
+      "2024": Corporate brand guidelines 2024 ('Move beyond.'); ORBITAL MESH collaboration from April; Circular Practice Review Silver recognition (fictional).
+      "2025": Signature change to 'Make room for moving.' (September); VIAFORMA grant expires (June); N6 pilot AT/DE (Sep–Nov).
+      "2026": Range release 26.3 effective 1 July; campaign AC-26 (Aug–Oct); corporate boilerplate revision 2.6.
+  caveats: ["Background chronology for context; dated facts must be taken from the governing record, not from this timeline."]
+
+- id: company.revenue-2025
+  family: context
+  kind: fact-sheet
+  domain: company
+  nature: fact
+  state: defined
+  authority: binding
+  scope: {audiences: [press, procurement, fleet-operator, facilities-manager]}
+  sourceRefs: ["supabrand:sources/24-evidence-dossier.md"]
+  validity: {from: "2026-03-01T00:00:00Z", to: "2027-03-01T00:00:00Z"}
+  value:
+    name: Group net revenue financial year 2025
+    amount: 120.0
+    currency: EUR
+    unit: million
+    owner: Finance Controls
+  caveats: ["Financial figure for corporate and B2B contexts; consumer copy does not cite group revenue."]

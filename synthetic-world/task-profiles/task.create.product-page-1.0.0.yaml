@@ -1,0 +1,23 @@
+# SYNTHETIC TEST DATA. OBDS 4.2.0 Task Profile. SUPERSEDED by version 1.1.0; kept for consumers still bound to 1.0.0.
+kind: obds-task-profile
+schemaVersion: "4.2.0"
+id: task.create.product-page
+version: 1.0.0
+description: Knowledge for a web product page (first version, without pricing and road-use requirements).
+scope:
+  channels: [web, ecommerce]
+governance:
+  status: superseded
+requirements:
+- id: product-facts
+  required: true
+  match: {domain: [product], nature: [fact]}
+- id: claims
+  required: true
+  match: {domain: [claim], kind: [claim]}
+- id: web-rendering
+  required: true
+  match: {subject: [technical.web-qualification-rendering]}
+- id: brand-signature
+  required: true
+  match: {subject: [brand.signature.master]}

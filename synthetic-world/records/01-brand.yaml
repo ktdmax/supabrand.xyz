@@ -1,0 +1,167 @@
+# SYNTHETIC TEST DATA. Brand identity and expression records. Sources are the existing SUPABRAND fixture documents (S01–S25).
+elements:
+- id: identity.name
+  family: identity
+  kind: brand-identity
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/01-corporate-brand-guidelines-2024.md", "supabrand:sources/22-press-and-corporate-communications.md"]
+  value: SUPABRAND Mobility SE
+  annotations: ["Approved short name after first formal mention: SUPABRAND. Fictional brand address supabrand.xyz."]
+
+- id: brand.purpose
+  family: context
+  kind: note
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/02-brand-letter-2026.md"]
+  value:
+    purpose: Give everyday movement more possibility, with less friction.
+    promise: Thoughtful mobility, made to fit real life.
+    brandWord: Spielraum
+    principles: "SUPA working principles: Sinn, Umsicht, Präsenz, Alltag (retrospective 2025 culture mnemonic, not the original etymology of the name)."
+  caveats: ["Qualitative philosophy, not a measurable product promise; philosophy copy is not a tagline replacement."]
+
+- id: brand.signature.master.2024
+  subject: brand.signature.master
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/01-corporate-brand-guidelines-2024.md"]
+  validity: {from: "2024-01-01T00:00:00Z", to: "2025-09-01T00:00:00Z"}
+  value:
+    line: Move beyond.
+    use: Corporate homepages, institutional end cards and brand-led brochure covers until replaced.
+  annotations: ["Superseded by 'Make room for moving.' for new masterbrand work from 2025-09-01. Existing 2024 print stock may be distributed, not reprinted."]
+
+- id: brand.signature.master
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/02-brand-letter-2026.md"]
+  validity: {from: "2025-09-01T00:00:00Z", to: null}
+  value:
+    line: Make room for moving.
+    use: New masterbrand communication from 2025-09-01. Keep the full stop. Endorsed-subbrand product pages use their own product signature; corporate pages about the group use the masterbrand line.
+    retainedEnglish: [ES, NL, PL, CZ, GB, US]
+  relatedTo: [brand.signature.master.2024, brand.subbrand-signatures]
+
+- id: brand.signature.master.de-DE
+  subject: brand.signature.master
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [de-DE]}
+  sourceRefs: ["supabrand:sources/16-germany-market-guide.md", "supabrand:sources/02-brand-letter-2026.md"]
+  validity: {from: "2025-09-01T00:00:00Z", to: null}
+  value:
+    line: Mehr Raum fürs Unterwegssein.
+    use: German consumer homepages and local masterbrand placements. The English line remains permitted for international corporate communication.
+
+- id: brand.signature.master.de-CH
+  subject: brand.signature.master
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [de-CH]}
+  sourceRefs: ["supabrand:sources/25-market-language-desk.md"]
+  validity: {from: "2025-09-01T00:00:00Z", to: null}
+  value:
+    line: Mehr Raum für Ihren Weg.
+    use: Swiss German consumer placements. The de-DE line is not transferred to Swiss homepages.
+
+- id: brand.signature.master.fr
+  subject: brand.signature.master
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [fr-FR, fr-CH]}
+  sourceRefs: ["supabrand:sources/25-market-language-desk.md"]
+  validity: {from: "2025-09-01T00:00:00Z", to: null}
+  value:
+    line: Faites place au mouvement.
+    use: French-language consumer placements in France and Switzerland.
+
+- id: brand.signature.master.it-IT
+  subject: brand.signature.master
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [it-IT]}
+  sourceRefs: ["supabrand:sources/17-italy-market-guide.md", "supabrand:sources/02-brand-letter-2026.md"]
+  validity: {from: "2025-09-01T00:00:00Z", to: null}
+  value:
+    line: La strada, a modo tuo.
+    use: Italian transcreation agreed with the Italy lead, not a literal rendering.
+
+- id: brand.portfolio
+  family: context
+  kind: note
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/07-product-naming-and-market-release.md", "supabrand:sources/01-corporate-brand-guidelines-2024.md"]
+  value:
+    masterbrand: SUPABRAND carries City bicycles directly, including the entry-level DAILY line.
+    endorsedSubbrands:
+      VELA: premium Allroad bicycles
+      PICO: Glide electric scooters
+      FIELD: professional Cargo cycles (B2B)
+      DOCKGRID: Node fleet-battery charging stations (B2B)
+    productFamilies: [City, Allroad, Cargo, Glide, Node]
+    programme: SECOND MILE is the group repair, parts and material-learning initiative. It is not a subbrand and not a certification.
+  relatedTo: [product.naming-rules, project.second-mile-de-network-2026]
+
+- id: brand.subbrand-signatures
+  family: context
+  kind: signature
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/11-vela-product-expression.md", "supabrand:sources/12-pico-consumer-guide.md", "supabrand:sources/13-professional-field-dockgrid.md"]
+  value:
+    VELA: The long way, well considered.
+    PICO: Small moves. Open possibilities.
+    FIELD: Ready for the work between places.
+    DOCKGRID: A place to power the next move.
+    use: English product heroes and brochure covers of the respective subbrand; optional on specification sheets, tenders and packaging. No translated subbrand signatures are released; a local page may omit the signature rather than invent one.
+  caveats: ["No translated subbrand signature exists; the Korean VELA hero omits the English signature."]
+
+- id: brand.visual-core
+  family: context
+  kind: note
+  domain: brand
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/03-visual-identity-manual.md", "supabrand:sources/04-digital-design-system.md"]
+  value:
+    palette: {Signal: "#F04438", Graphite: "#202522", Paper: "#F4F1E9", Moss: "#B8C7AE", Mist: "#DCE4E7"}
+    digitalActionRed: {primary: "#B72F28", hover: "#942720", note: Signal is decorative and not a primary CTA substitute.}
+    logoMinimums: {primary: "128 px / 32 mm", stacked: "96 px / 24 mm", compact: "20 px / 5 mm", endorsed: "144 px / 36 mm", clearSpace: H/2}
+    typography: System sans in browser and office examples; original SVG logo paths need no font.
+  caveats: ["Uncoated/spot print values are not released; a print proof is required."]

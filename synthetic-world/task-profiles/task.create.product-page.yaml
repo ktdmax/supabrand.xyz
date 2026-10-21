@@ -1,0 +1,66 @@
+kind: obds-task-profile
+schemaVersion: 4.2.0
+id: task.create.product-page
+version: 1.1.0
+description: Knowledge for a web product page in one locale. Request supplies market, locale, jurisdiction, audience, product
+  family and the web channel.
+scope:
+  channels:
+  - web
+  - ecommerce
+governance:
+  status: approved
+  approval:
+    approvedBy: role:supabrand-brand-operations
+    approvedAt: '2026-10-01T09:00:00Z'
+    approvedContentHash: sha256:e5132c292d831ab1eeabf54f2f2cc82fcd9f327b5f4751244869423a3317cb2b
+requirements:
+- id: product-facts
+  required: true
+  match:
+    domain:
+    - product
+    nature:
+    - fact
+- id: naming
+  required: true
+  match:
+    subject:
+    - product.naming-rules
+- id: claims
+  required: true
+  match:
+    domain:
+    - claim
+    kind:
+    - claim
+- id: web-rendering
+  required: true
+  match:
+    subject:
+    - technical.web-qualification-rendering
+- id: brand-signature
+  required: true
+  match:
+    subject:
+    - brand.signature.master
+- id: pricing
+  required: false
+  match:
+    kind:
+    - price-list
+- id: road-use
+  required: false
+  match:
+    subject:
+    - legal.road-use-review
+- id: legal-notes
+  required: false
+  match:
+    domain:
+    - legal
+    kind:
+    - disclaimer
+    - open-item
+    - note
+  minAuthority: informational

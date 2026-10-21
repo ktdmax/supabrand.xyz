@@ -1,0 +1,51 @@
+kind: obds-task-profile
+schemaVersion: 4.2.0
+id: task.evaluate.claim
+version: 1.0.0
+description: Knowledge needed to judge whether a statement may be used in a given market, channel and product context.
+governance:
+  status: approved
+  approval:
+    approvedBy: role:supabrand-brand-operations
+    approvedAt: '2026-10-01T09:00:00Z'
+    approvedContentHash: sha256:dcd6f6676a0795adb5d2ddb1ff35d2b7abdf7bfae11c8b1629d863b93437b8cc
+requirements:
+- id: claims
+  required: true
+  match:
+    domain:
+    - claim
+    kind:
+    - claim
+- id: evidence
+  required: true
+  match:
+    domain:
+    - research
+    kind:
+    - test-report
+    - record
+- id: prohibitions
+  required: true
+  match:
+    family:
+    - rules
+- id: product-facts
+  required: true
+  match:
+    domain:
+    - product
+    nature:
+    - fact
+- id: legal-context
+  required: false
+  match:
+    domain:
+    - legal
+  minAuthority: informational
+- id: market-context
+  required: false
+  match:
+    domain:
+    - market
+  minAuthority: informational

@@ -1,0 +1,148 @@
+# SYNTHETIC TEST DATA. Communication records: address, tone, locale rules, press workflow. Derived from the existing fixture guidance and extended.
+elements:
+- id: communication.address
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/06-tone-and-terminology.md", "supabrand:sources/25-market-language-desk.md"]
+  value:
+    default: Formal address in German-language copy (Sie); vous in French; tu in Italian consumer copy; je in Dutch consumer copy.
+    note: Narrower locale and audience records override this default.
+
+- id: communication.address.de-de
+  subject: communication.address
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [de-DE], audiences: [consumer]}
+  sourceRefs: ["supabrand:sources/16-germany-market-guide.md"]
+  value: {form: Sie, note: "German consumer copy uses Sie (unlike Austrian consumer copy). B2B copy is covered by communication.address.b2b-de. Owner Lena Wirth (DE language lead)."}
+
+- id: communication.address.de-at-consumer
+  subject: communication.address
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [de-AT], audiences: [consumer]}
+  sourceRefs: ["supabrand:sources/25-market-language-desk.md", "supabrand:sources/15-campaign-toolkit-2026.md"]
+  value: {form: du, note: "Austrian consumer copy uses du (campaign AC-26 'Deine Stadt. Ein Stück näher.'). Austrian B2B copy stays Sie."}
+
+- id: communication.address.de-ch
+  subject: communication.address
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [de-CH]}
+  sourceRefs: ["supabrand:sources/25-market-language-desk.md"]
+  value: {form: Sie, orthography: ss instead of ß, note: "Swiss German copy uses Sie and ss throughout; signature 'Mehr Raum für Ihren Weg.'. Owner Noa Keller."}
+
+- id: communication.address.b2b-de
+  subject: communication.address
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {locales: [de-DE, de-AT, de-CH], audiences: [dealer, fleet-operator, facilities-manager, procurement, installation-partner, press]}
+  sourceRefs: ["supabrand:sources/06-tone-and-terminology.md"]
+  value: {form: Sie, note: "All German-language B2B and press copy uses Sie in every market, including Austria."}
+
+- id: communication.tone
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/06-tone-and-terminology.md", "supabrand:sources/02-brand-letter-2026.md"]
+  value:
+    principles: ["Sinn (purpose before feature)", "Umsicht (qualify what we claim)", "Präsenz (present tense, concrete places)", "Alltag (everyday use, not adventure)"]
+    terminology: Use 'room to move' / 'Spielraum' as the brand idea; 'SECOND MILE' always in capitals; 'range release' not 'launch wave'.
+    avoid: [superlatives, market leadership, "'eco-friendly' without a specific claim", "'Austrian-made'"]
+  relatedTo: [rules.no-superlatives-and-speed-folding, brand.purpose]
+
+- id: communication.locales
+  family: context
+  kind: note
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  sourceRefs: ["supabrand:sources/25-market-language-desk.md"]
+  value:
+    locales: [de-AT, de-DE, de-CH, fr-FR, fr-CH, it-IT, it-CH, es-ES, nl-NL, pl-PL, cs-CZ, en-GB, en-US, ko-KR]
+    count: 13 released locales plus it-CH handled by the Italian desk (synthetic note)
+    rule: Every locale has a market language desk owner; untranslated English copy is not published in non-English locales except product names and DAILY.
+  caveats: ["The existing fixture counts 13 locales; it-CH is treated here as served by the it-IT desk without separate copy."]
+
+- id: communication.social-rules
+  family: context
+  kind: style-rule
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {channels: [social, instagram, tiktok, linkedin, youtube]}
+  sourceRefs: ["supabrand:sources/05-social-media-guidelines.md"]
+  value:
+    handles: One masterbrand account per platform; subbrands have no separate accounts.
+    partnerMarks: ORBITAL MESH only on LinkedIn corporate posts (grant); never Instagram or TikTok.
+    claims: Claims in social captions carry the qualification in the caption, not in a comment.
+    safety: No footage of folding a scooter while riding; helmets in all riding footage.
+  relatedTo: [legal.partner-grant.orbital-mesh, claim.c08-g1-folds-three-steps]
+
+- id: communication.press-workflow
+  family: context
+  kind: process
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {channels: [press]}
+  sourceRefs: ["supabrand:sources/22-press-and-corporate-communications.md"]
+  value:
+    steps: [Draft by Corporate Affairs (Priya Lenz), Claims Review check of every figure, Rights Counsel check of partner mentions, Release with the current boilerplate]
+    boilerplate: Use company.boilerplate (revision from 2026-08-12).
+  relatedTo: [company.boilerplate, claim.c02-registered-owners]
+
+- id: communication.press-embargo-vela-a9
+  family: context
+  kind: note
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {channels: [press, social, web], productFamilies: [allroad]}
+  sourceRefs: ["synthetic:product-council-pre-release-PN-271"]
+  validity: {from: "2026-10-01T00:00:00Z", to: "2027-03-01T00:00:00Z"}
+  value:
+    rule: VELA A9 is embargoed. No external mention, teaser or dealer briefing outside the signed pre-release list until 2027-03-01.
+  relatedTo: [product.vela-a9, project.vela-a9-launch-2027]
+
+- id: communication.local-observation.ch-signature
+  family: context
+  kind: observation
+  domain: communication
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [CH], locales: [de-CH]}
+  sourceRefs: ["synthetic:market-office-CH-note-2026-09"]
+  value:
+    observation: The Swiss market office reports that dealers prefer the English master signature 'Make room for moving.' on showroom material over the de-CH signature 'Mehr Raum für Ihren Weg.'.
+    status: Observation only; the binding de-CH signature record is unchanged.
+  caveats: ["Informational local observation; it does not alter the binding locale signature."]
+  relatedTo: [brand.signature.master.de-CH]

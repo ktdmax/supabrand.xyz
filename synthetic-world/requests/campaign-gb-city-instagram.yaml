@@ -1,0 +1,5 @@
+profile: task.create.campaign
+draftOk: true
+scope: {markets: [GB], locales: [en-GB], jurisdictions: [GB], audiences: [consumer], productFamilies: [city], channels: [instagram]}
+expectBlocked: true
+expectation: No campaign project exists for the UK; the required campaign-project requirement has a gap, so the task is blocked.

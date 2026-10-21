@@ -1,0 +1,49 @@
+kind: obds-task-profile
+schemaVersion: 4.2.0
+id: task.answer.product-question
+version: 1.0.0
+description: Knowledge for answering a product question from sales or service staff in one market.
+governance:
+  status: approved
+  approval:
+    approvedBy: role:supabrand-brand-operations
+    approvedAt: '2026-10-01T09:00:00Z'
+    approvedContentHash: sha256:b5d3f26a468889c6ff8d3294b4e415122ceb27a247befa2f739eb4c013c5088c
+requirements:
+- id: product-facts
+  required: true
+  match:
+    domain:
+    - product
+    nature:
+    - fact
+- id: naming
+  required: true
+  match:
+    subject:
+    - product.naming-rules
+    - product.vela-a8.display-name
+- id: technical
+  required: false
+  match:
+    domain:
+    - technical
+- id: claims
+  required: false
+  match:
+    domain:
+    - claim
+    kind:
+    - claim
+- id: legal-context
+  required: false
+  match:
+    domain:
+    - legal
+  minAuthority: informational
+- id: market-context
+  required: false
+  match:
+    domain:
+    - market
+  minAuthority: informational

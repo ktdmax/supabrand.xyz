@@ -1,0 +1,30 @@
+# SYNTHETIC TEST DATA. OBDS 4.2.0 Task Profile. DRAFT: not approved, must not be bound by a consumer.
+kind: obds-task-profile
+schemaVersion: "4.2.0"
+id: task.create.social-video
+version: 0.2.0
+description: Knowledge for a short social video (Instagram or TikTok). Draft profile under review by Consumer Marketing.
+scope:
+  channels: [instagram, tiktok]
+governance:
+  status: draft
+requirements:
+- id: social-rules
+  required: true
+  match: {subject: [communication.social-rules]}
+- id: brand-signature
+  required: true
+  match: {subject: [brand.signature.master]}
+- id: campaign-project
+  required: true
+  match: {domain: [project], kind: [project]}
+- id: claims
+  required: false
+  match: {domain: [claim], kind: [claim]}
+- id: partner-grants
+  required: false
+  match: {kind: [licence-grant]}
+- id: audience
+  required: false
+  match: {domain: [audience]}
+  minAuthority: informational

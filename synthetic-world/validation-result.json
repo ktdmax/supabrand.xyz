@@ -1,0 +1,3255 @@
+{
+  "asOf": "2026-10-21T12:00:00Z",
+  "obdsRepoCommit": "a24ea3e64e7a76c7a31cad8d2a34a71ee530218e",
+  "manifest": {
+    "id": "urn:obds:brand:supabrand-synthetic-world",
+    "version": "1.0.0",
+    "contentHash": "sha256:26ee0d5072bb2f7e89237a86c672c323485633eb9d65877df64c7656b64a7a1a",
+    "elementCount": 142,
+    "valueContractCount": 16,
+    "foundationErrors": [],
+    "knowledgeRecordsErrors": []
+  },
+  "taskProfiles": [
+    {
+      "file": "task.answer.product-question.yaml",
+      "id": "task.answer.product-question",
+      "version": "1.0.0",
+      "governanceStatus": "approved",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:2a1be3ad75d290417029cb8c7b9d293281e62f0317c349be0a6fb656c25351af",
+      "approvedContentHash": "sha256:b5d3f26a468889c6ff8d3294b4e415122ceb27a247befa2f739eb4c013c5088c"
+    },
+    {
+      "file": "task.check.on-brand.yaml",
+      "id": "task.check.on-brand",
+      "version": "1.0.0",
+      "governanceStatus": "approved",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:aab113ea0781f7a64b54af8d2f85446bdd7139c905b3ef17a2e362ddb85c82b5",
+      "approvedContentHash": "sha256:c22dbc48cf94073a50f1634149d9ef6a815bf82a3e304ba9a242c3159ffed4a9"
+    },
+    {
+      "file": "task.create.brochure.yaml",
+      "id": "task.create.brochure",
+      "version": "1.0.0",
+      "governanceStatus": "approved",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:6a7e3dea847254b288d1a2f7e324e4978105583f55b45df2337d4dc732b391b5",
+      "approvedContentHash": "sha256:4258ed5f31e14342de41a0469b50e0032e80c40cb482557d743699b8f961b971"
+    },
+    {
+      "file": "task.create.campaign.yaml",
+      "id": "task.create.campaign",
+      "version": "0.1.0",
+      "governanceStatus": "draft",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:cc1d19e103e3e7c9b1da9f199d333810ad442b8d81ae798f1a6f08fb087f48d5"
+    },
+    {
+      "file": "task.create.product-page-1.0.0.yaml",
+      "id": "task.create.product-page",
+      "version": "1.0.0",
+      "governanceStatus": "superseded",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:7b6492f6cc1a9f641f6dbdaf9d4c077af215fbc507930e2a4f4b2e8f142c0486"
+    },
+    {
+      "file": "task.create.product-page.yaml",
+      "id": "task.create.product-page",
+      "version": "1.1.0",
+      "governanceStatus": "approved",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:94e6e1f7639a15ecde41e487844122b8d1ed61dbf678f91d042c3a7500a4f88c",
+      "approvedContentHash": "sha256:e5132c292d831ab1eeabf54f2f2cc82fcd9f327b5f4751244869423a3317cb2b"
+    },
+    {
+      "file": "task.create.social-video.yaml",
+      "id": "task.create.social-video",
+      "version": "0.2.0",
+      "governanceStatus": "draft",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:6a90a0a5916ba4e7b61176860ff1f9be22a0d2abbfcb6dd702df7159fcbca64e"
+    },
+    {
+      "file": "task.evaluate.claim.yaml",
+      "id": "task.evaluate.claim",
+      "version": "1.0.0",
+      "governanceStatus": "approved",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:dd014396eb34d11e1c2ea9f3048550f7959c00da014b1f0cfbe5a6ad944b7800",
+      "approvedContentHash": "sha256:dcd6f6676a0795adb5d2ddb1ff35d2b7abdf7bfae11c8b1629d863b93437b8cc"
+    },
+    {
+      "file": "task.prepare.sales-presentation.yaml",
+      "id": "task.prepare.sales-presentation",
+      "version": "1.0.0",
+      "governanceStatus": "approved",
+      "schemaErrors": [],
+      "taskProfileHash": "sha256:5be8b8c636124d2b4e24c1f5f24227be246d0f2fb579b685e5e5bb75f1f6ff4f",
+      "approvedContentHash": "sha256:0e0e35422c608e1e74a74c309f4c332aa1cc4a06a3c832838b063cdea172a525"
+    }
+  ],
+  "resolutions": [
+    {
+      "request": "brochure-at-dealer-city.yaml",
+      "profile": "task.create.brochure",
+      "scope": {
+        "markets": [
+          "AT"
+        ],
+        "locales": [
+          "de-AT"
+        ],
+        "jurisdictions": [
+          "AT"
+        ],
+        "audiences": [
+          "dealer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "print"
+        ],
+        "outputTypes": [
+          "brochure"
+        ]
+      },
+      "expectation": "Austrian dealer brochure. communication.address.b2b-de (Sie) wins over the global default; the de-AT consumer du rule is out of scope because the audience is dealer.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.create.brochure",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.city-c1-daily",
+            "product.city-c2",
+            "product.market-release-26-3"
+          ],
+          "elements": [
+            {
+              "id": "product.city-c1-daily",
+              "authority": "binding"
+            },
+            {
+              "id": "product.city-c2",
+              "authority": "binding"
+            },
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over."
+          ],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c03-second-mile-revenue-share",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c06-c2-frame-recycled"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c03-second-mile-revenue-share",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c06-c2-frame-recycled",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address.b2b-de"
+          ],
+          "elements": [
+            {
+              "id": "communication.address.b2b-de",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "tone",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.tone"
+          ],
+          "elements": [
+            {
+              "id": "communication.tone",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "legal-notes",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh",
+            "legal.warranty-wording-eu",
+            "rules.no-partner-endorsement-wording",
+            "rules.no-recycled-bicycle-wording"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-recycled-bicycle-wording",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        },
+        {
+          "id": "market-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.at"
+          ],
+          "elements": [
+            {
+              "id": "market.at",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "brochure-de-city-consumer.yaml",
+      "profile": "task.create.brochure",
+      "scope": {
+        "markets": [
+          "DE"
+        ],
+        "locales": [
+          "de-DE"
+        ],
+        "jurisdictions": [
+          "DE"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "print"
+        ],
+        "outputTypes": [
+          "brochure"
+        ]
+      },
+      "expectation": "German consumer City brochure. de-DE signature and Sie address win by narrower scope; C06 global wording applies (no French clause); C11 (US only) rejected out of scope.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.create.brochure",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master.de-DE"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master.de-DE",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.city-c1-daily",
+            "product.city-c2",
+            "product.market-release-26-3"
+          ],
+          "elements": [
+            {
+              "id": "product.city-c1-daily",
+              "authority": "binding"
+            },
+            {
+              "id": "product.city-c2",
+              "authority": "binding"
+            },
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over."
+          ],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c06-c2-frame-recycled",
+            "claim.c12-de-workshop-network"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c06-c2-frame-recycled",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c12-de-workshop-network",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address.de-de"
+          ],
+          "elements": [
+            {
+              "id": "communication.address.de-de",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "tone",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.tone"
+          ],
+          "elements": [
+            {
+              "id": "communication.tone",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "legal-notes",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh",
+            "legal.warranty-wording-eu",
+            "rules.no-partner-endorsement-wording",
+            "rules.no-recycled-bicycle-wording"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-recycled-bicycle-wording",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        },
+        {
+          "id": "market-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.de"
+          ],
+          "elements": [
+            {
+              "id": "market.de",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "brochure-fr-city-consumer.yaml",
+      "profile": "task.create.brochure",
+      "scope": {
+        "markets": [
+          "FR"
+        ],
+        "locales": [
+          "fr-FR"
+        ],
+        "jurisdictions": [
+          "FR"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "print"
+        ],
+        "outputTypes": [
+          "brochure"
+        ]
+      },
+      "expectation": "French consumer City brochure. The FR override claim.c06-c2-frame-recycled.fr wins the subject over the global C06 and pulls in legal.fr-material-clause as a dependency.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.create.brochure",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master.fr"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master.fr",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.city-c1-daily",
+            "product.city-c2",
+            "product.market-release-26-3"
+          ],
+          "elements": [
+            {
+              "id": "product.city-c1-daily",
+              "authority": "binding"
+            },
+            {
+              "id": "product.city-c2",
+              "authority": "binding"
+            },
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over."
+          ],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c06-c2-frame-recycled.fr"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c06-c2-frame-recycled.fr",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address"
+          ],
+          "elements": [
+            {
+              "id": "communication.address",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "tone",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.tone"
+          ],
+          "elements": [
+            {
+              "id": "communication.tone",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "legal-notes",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.fr-material-clause",
+            "legal.partner-grant.orbital-mesh",
+            "legal.warranty-wording-eu",
+            "rules.no-partner-endorsement-wording",
+            "rules.no-recycled-bicycle-wording"
+          ],
+          "elements": [
+            {
+              "id": "legal.fr-material-clause",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-recycled-bicycle-wording",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        },
+        {
+          "id": "market-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.fr"
+          ],
+          "elements": [
+            {
+              "id": "market.fr",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "campaign-gb-city-instagram.yaml",
+      "profile": "task.create.campaign",
+      "scope": {
+        "markets": [
+          "GB"
+        ],
+        "locales": [
+          "en-GB"
+        ],
+        "jurisdictions": [
+          "GB"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "instagram"
+        ]
+      },
+      "expectation": "No campaign project exists for the UK; the required campaign-project requirement has a gap, so the task is blocked.",
+      "profileStatus": "draft",
+      "profileEcho": {
+        "id": "task.create.campaign",
+        "version": "0.1.0",
+        "governanceStatus": "draft"
+      },
+      "requirements": [
+        {
+          "id": "campaign-project",
+          "required": true,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "project.campaign-ac-26: out of scope",
+            "project.campaign-2025-less-rush: out of scope",
+            "project.campaign-2025-less-rush: requires binding authority",
+            "project.n6-pilot-at-de-2025: out of scope",
+            "project.trade-show-de-2026: out of scope",
+            "project.website-relaunch-2026: out of scope",
+            "project.second-mile-de-network-2026: out of scope",
+            "project.social-campaign-pico-2026: out of scope",
+            "project.sales-enablement-pro-2026: out of scope",
+            "project.fr-scooter-pilot-2026: out of scope",
+            "project.pl-municipal-pilot-2026: out of scope",
+            "project.pl-municipal-pilot-2026: requires binding authority",
+            "project.vela-a9-launch-2027: out of scope"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Unresolved endorsement request; any public mention requires Corporate Affairs sign-off.",
+            "Embargoed; no external mention before the signed range release."
+          ]
+        },
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c06-c2-frame-recycled"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c06-c2-frame-recycled",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: out of scope",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address"
+          ],
+          "elements": [
+            {
+              "id": "communication.address",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "audience",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "audience.consumer-city-commuter"
+          ],
+          "elements": [
+            {
+              "id": "audience.consumer-city-commuter",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "competitor-context",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "competitor.landscape.de: out of scope",
+            "competitor.landscape.nl: out of scope",
+            "competitor.landscape.scooter-eu: out of scope",
+            "competitor.landscape.fleet-charging: out of scope",
+            "competitor.rumour.nl-five-year-warranty: out of scope",
+            "competitor.rumour.nl-five-year-warranty: unverified authority cannot satisfy requirements",
+            "competitor.rumour.munich-tender: out of scope",
+            "competitor.rumour.munich-tender: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Internal planning view; competitor positioning statements are synthetic and not market research.",
+            "Internal planning view; no sell-out or share data behind it.",
+            "Internal planning view; synthetic.",
+            "Voltbay Systems is a fictional company created for this fixture.",
+            "Unverified dealer hearsay; no public source. Not to be used in sales arguments or planning documents as fact.",
+            "Unverified; tender documents not seen. Professional Systems to confirm via the procurement portal."
+          ]
+        }
+      ],
+      "blocked": true
+    },
+    {
+      "request": "campaign-nl-city-instagram.yaml",
+      "profile": "task.create.campaign",
+      "scope": {
+        "markets": [
+          "NL"
+        ],
+        "locales": [
+          "nl-NL"
+        ],
+        "jurisdictions": [
+          "NL"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "instagram"
+        ]
+      },
+      "expectation": "Draft profile resolved for authoring only. Campaign AC-26 applicable in NL during its flight; NL competitor landscape and rumour visible (rumour rejected as unverified).",
+      "profileStatus": "draft",
+      "profileEcho": {
+        "id": "task.create.campaign",
+        "version": "0.1.0",
+        "governanceStatus": "draft"
+      },
+      "requirements": [
+        {
+          "id": "campaign-project",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "project.campaign-ac-26"
+          ],
+          "elements": [
+            {
+              "id": "project.campaign-ac-26",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Unresolved endorsement request; any public mention requires Corporate Affairs sign-off.",
+            "Embargoed; no external mention before the signed range release."
+          ]
+        },
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c06-c2-frame-recycled"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c06-c2-frame-recycled",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address"
+          ],
+          "elements": [
+            {
+              "id": "communication.address",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "audience",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "audience.consumer-city-commuter"
+          ],
+          "elements": [
+            {
+              "id": "audience.consumer-city-commuter",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "competitor-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "competitor.landscape.nl"
+          ],
+          "elements": [
+            {
+              "id": "competitor.landscape.nl",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Internal planning view; no sell-out or share data behind it."
+          ],
+          "rejectedCaveats": [
+            "Internal planning view; competitor positioning statements are synthetic and not market research.",
+            "Internal planning view; synthetic.",
+            "Voltbay Systems is a fictional company created for this fixture.",
+            "Unverified dealer hearsay; no public source. Not to be used in sales arguments or planning documents as fact.",
+            "Unverified; tender documents not seen. Professional Systems to confirm via the procurement portal."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "check-on-brand-de-print.yaml",
+      "profile": "task.check.on-brand",
+      "scope": {
+        "markets": [
+          "DE"
+        ],
+        "locales": [
+          "de-DE"
+        ],
+        "jurisdictions": [
+          "DE"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "print"
+        ]
+      },
+      "expectation": "On-brand check for a German print asset. All three prohibition rules except the city-scoped one are global; open items (font licence, portrait rights) surface as informational caveats.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.check.on-brand",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "visual-core",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.visual-core"
+          ],
+          "elements": [
+            {
+              "id": "brand.visual-core",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Uncoated/spot print values are not released; a print proof is required."
+          ],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "tone",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.tone"
+          ],
+          "elements": [
+            {
+              "id": "communication.tone",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "prohibitions",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "rules.no-partner-endorsement-wording",
+            "rules.no-recycled-bicycle-wording",
+            "rules.no-superlatives-and-speed-folding"
+          ],
+          "elements": [
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-recycled-bicycle-wording",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-superlatives-and-speed-folding",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "naming",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.naming-rules"
+          ],
+          "elements": [
+            {
+              "id": "product.naming-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address.de-de"
+          ],
+          "elements": [
+            {
+              "id": "communication.address.de-de",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "partner-grants",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "open-items",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "legal.om-grant-review-2026: state is unknown, not defined",
+            "legal.de-f4-carton-type-size: out of scope",
+            "legal.de-f4-carton-type-size: state is unknown, not defined",
+            "legal.uk-battery-take-back-panel: out of scope",
+            "legal.uk-battery-take-back-panel: state is unknown, not defined",
+            "legal.om-commuter-portrait-rights: state is unknown, not defined",
+            "legal.font-licence-supa-grotesk: state is unknown, not defined"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "evaluate-claim-allroad-de.yaml",
+      "profile": "task.evaluate.claim",
+      "scope": {
+        "markets": [
+          "DE"
+        ],
+        "locales": [
+          "de-DE"
+        ],
+        "jurisdictions": [
+          "DE"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "allroad"
+        ],
+        "channels": [
+          "paid-digital"
+        ]
+      },
+      "expectation": "Evaluate VELA A8 statements for German paid media. C07 applicable with E07; C18 rejected (unverified, draft governance, evidence state unknown).",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.evaluate.claim",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c07-a8-range"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c07-a8-range",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.city-c2: out of scope",
+            "dependency evidence.e06-c2-frame-recycled-content: out of scope",
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "evidence",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "evidence.e01-market-release",
+            "evidence.e02-registered-owners",
+            "evidence.e03-revenue-share-second-mile",
+            "evidence.e04-emissions-target",
+            "evidence.e05-emissions-2025",
+            "evidence.e07-a8-range-test",
+            "evidence.e12-de-workshop-count",
+            "evidence.e13-circular-practice-review-2024",
+            "evidence.e14-orbital-mesh-circular",
+            "evidence.e15-viaforma-grant"
+          ],
+          "elements": [
+            {
+              "id": "evidence.e01-market-release",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e02-registered-owners",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e03-revenue-share-second-mile",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e04-emissions-target",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e05-emissions-2025",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e07-a8-range-test",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e12-de-workshop-count",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e13-circular-practice-review-2024",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e14-orbital-mesh-circular",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e15-viaforma-grant",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "prohibitions",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "rules.no-partner-endorsement-wording",
+            "rules.no-superlatives-and-speed-folding"
+          ],
+          "elements": [
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-superlatives-and-speed-folding",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.market-release-26-3",
+            "product.vela-a8"
+          ],
+          "elements": [
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            },
+            {
+              "id": "product.vela-a8",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over.",
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "legal-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh",
+            "legal.warranty-wording-eu",
+            "rules.no-partner-endorsement-wording"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        },
+        {
+          "id": "market-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.de",
+            "market.pricing-2026"
+          ],
+          "elements": [
+            {
+              "id": "market.de",
+              "authority": "informational"
+            },
+            {
+              "id": "market.pricing-2026",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not)."
+          ],
+          "rejectedCaveats": [
+            "Future-valid record; not usable before 2027-01-01.",
+            "Anecdotal dealer council feedback, not sell-out data.",
+            "Do not cite externally; ratio is not validated by Sales Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "product-page-ch-glide.yaml",
+      "profile": "task.create.product-page",
+      "scope": {
+        "markets": [
+          "CH"
+        ],
+        "locales": [
+          "de-CH"
+        ],
+        "jurisdictions": [
+          "CH"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "glide"
+        ],
+        "channels": [
+          "web"
+        ]
+      },
+      "expectation": "Swiss PICO G1 page. The product fact resolves (global fact) but claim C08 is rejected out of scope because G1 is not released in CH; only corporate claims remain. legal.road-use-review surfaces the release boundary.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.create.product-page",
+        "version": "1.1.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.market-release-26-3",
+            "product.pico-g1"
+          ],
+          "elements": [
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            },
+            {
+              "id": "product.pico-g1",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately."
+          ],
+          "rejectedCaveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "naming",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.naming-rules"
+          ],
+          "elements": [
+            {
+              "id": "product.naming-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c02-registered-owners",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c02-registered-owners",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.city-c2: out of scope",
+            "dependency evidence.e06-c2-frame-recycled-content: out of scope",
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency technical.assist-configurations: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: out of scope",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "web-rendering",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "technical.web-qualification-rendering"
+          ],
+          "elements": [
+            {
+              "id": "technical.web-qualification-rendering",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master.de-CH"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master.de-CH",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "pricing",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.pricing-2026"
+          ],
+          "elements": [
+            {
+              "id": "market.pricing-2026",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not)."
+          ],
+          "rejectedCaveats": [
+            "Future-valid record; not usable before 2027-01-01."
+          ]
+        },
+        {
+          "id": "road-use",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.road-use-review"
+          ],
+          "elements": [
+            {
+              "id": "legal.road-use-review",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "legal-notes",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.road-use-review",
+            "legal.warranty-wording-eu"
+          ],
+          "elements": [
+            {
+              "id": "legal.road-use-review",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "product-page-de-city-2027.yaml",
+      "profile": "task.create.product-page",
+      "scope": {
+        "markets": [
+          "DE"
+        ],
+        "locales": [
+          "de-DE"
+        ],
+        "jurisdictions": [
+          "DE"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "web"
+        ]
+      },
+      "expectation": "Same page evaluated on 2027-02-01. market.pricing-2027 now wins the pricing subject; C01 and C06 are rejected as expired; C04 and C05 still valid.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.create.product-page",
+        "version": "1.1.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.city-c1-daily",
+            "product.city-c2",
+            "product.market-release-26-3"
+          ],
+          "elements": [
+            {
+              "id": "product.city-c1-daily",
+              "authority": "binding"
+            },
+            {
+              "id": "product.city-c2",
+              "authority": "binding"
+            },
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over."
+          ],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "naming",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.naming-rules"
+          ],
+          "elements": [
+            {
+              "id": "product.naming-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c02-registered-owners",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result"
+          ],
+          "elements": [
+            {
+              "id": "claim.c02-registered-owners",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency legal.partner-grant.orbital-mesh: expired or not yet valid at 2027-02-01T12:00:00Z",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2027-02-01T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "web-rendering",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "technical.web-qualification-rendering"
+          ],
+          "elements": [
+            {
+              "id": "technical.web-qualification-rendering",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master.de-DE"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master.de-DE",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "pricing",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.pricing-2027"
+          ],
+          "elements": [
+            {
+              "id": "market.pricing-2027",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Future-valid record; not usable before 2027-01-01."
+          ],
+          "rejectedCaveats": [
+            "Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not)."
+          ]
+        },
+        {
+          "id": "road-use",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "legal.road-use-review: out of scope"
+          ],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "legal-notes",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.warranty-wording-eu"
+          ],
+          "elements": [
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "product-page-us-city.yaml",
+      "profile": "task.create.product-page",
+      "scope": {
+        "markets": [
+          "US"
+        ],
+        "locales": [
+          "en-US"
+        ],
+        "jurisdictions": [
+          "US"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "city"
+        ],
+        "channels": [
+          "web"
+        ]
+      },
+      "expectation": "US City product page. C11 lifetime frame warranty applicable only here; optional pricing unsatisfied (price list covers core EU/CH markets only).",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.create.product-page",
+        "version": "1.1.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.city-c1-daily",
+            "product.city-c2",
+            "product.market-release-26-3"
+          ],
+          "elements": [
+            {
+              "id": "product.city-c1-daily",
+              "authority": "binding"
+            },
+            {
+              "id": "product.city-c2",
+              "authority": "binding"
+            },
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over."
+          ],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "naming",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.naming-rules"
+          ],
+          "elements": [
+            {
+              "id": "product.naming-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c02-registered-owners",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c06-c2-frame-recycled",
+            "claim.c11-us-c2-lifetime-frame-warranty"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c02-registered-owners",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c06-c2-frame-recycled",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c11-us-c2-lifetime-frame-warranty",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: out of scope",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "web-rendering",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "technical.web-qualification-rendering"
+          ],
+          "elements": [
+            {
+              "id": "technical.web-qualification-rendering",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "pricing",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "market.pricing-2026: out of scope",
+            "market.pricing-2027: out of scope"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not).",
+            "Future-valid record; not usable before 2027-01-01."
+          ]
+        },
+        {
+          "id": "road-use",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "legal.road-use-review: out of scope"
+          ],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "legal-notes",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "legal.om-grant-review-2026: state is unknown, not defined",
+            "legal.fr-material-clause: out of scope",
+            "legal.warranty-wording-eu: out of scope",
+            "legal.road-use-review: out of scope",
+            "legal.de-f4-carton-type-size: out of scope",
+            "legal.de-f4-carton-type-size: state is unknown, not defined",
+            "legal.uk-battery-take-back-panel: out of scope",
+            "legal.uk-battery-take-back-panel: state is unknown, not defined",
+            "legal.om-commuter-portrait-rights: state is unknown, not defined",
+            "legal.font-licence-supa-grotesk: state is unknown, not defined"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "product-question-gb-glide.yaml",
+      "profile": "task.answer.product-question",
+      "scope": {
+        "markets": [
+          "GB"
+        ],
+        "locales": [
+          "en-GB"
+        ],
+        "jurisdictions": [
+          "GB"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "glide"
+        ],
+        "channels": [
+          "sales"
+        ]
+      },
+      "expectation": "UK question about PICO G1. Product fact resolves but the release record and road-use note show no GB release; C08 rejected out of scope.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.answer.product-question",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.market-release-26-3",
+            "product.pico-g1"
+          ],
+          "elements": [
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            },
+            {
+              "id": "product.pico-g1",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately."
+          ],
+          "rejectedCaveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "naming",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.naming-rules"
+          ],
+          "elements": [
+            {
+              "id": "product.naming-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "technical",
+          "required": false,
+          "satisfied": false,
+          "elementIds": [],
+          "elements": [],
+          "gaps": [
+            "technical.f4-b2-battery: out of scope",
+            "technical.n6-installation: out of scope",
+            "technical.assist-configurations: out of scope",
+            "technical.web-qualification-rendering: out of scope",
+            "technical.service-carton-print: out of scope"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.city-c2: out of scope",
+            "dependency evidence.e06-c2-frame-recycled-content: out of scope",
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency technical.assist-configurations: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: out of scope",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "legal-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh",
+            "legal.road-use-review",
+            "legal.warranty-wording-eu",
+            "rules.no-partner-endorsement-wording"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.road-use-review",
+              "authority": "binding"
+            },
+            {
+              "id": "legal.warranty-wording-eu",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        },
+        {
+          "id": "market-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.gb"
+          ],
+          "elements": [
+            {
+              "id": "market.gb",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not).",
+            "Future-valid record; not usable before 2027-01-01.",
+            "Anecdotal dealer council feedback, not sell-out data.",
+            "Do not cite externally; ratio is not validated by Sales Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "product-question-kr-allroad.yaml",
+      "profile": "task.answer.product-question",
+      "scope": {
+        "markets": [
+          "KR"
+        ],
+        "locales": [
+          "ko-KR"
+        ],
+        "jurisdictions": [
+          "KR"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "allroad"
+        ],
+        "channels": [
+          "sales"
+        ]
+      },
+      "expectation": "Korean consumer question about VELA A8. The ko-KR display-name record wins its subject; range claim C07 rejected out of scope (not KR); assist configuration note applies.",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.answer.product-question",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.market-release-26-3",
+            "product.vela-a8"
+          ],
+          "elements": [
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            },
+            {
+              "id": "product.vela-a8",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over.",
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "naming",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.naming-rules",
+            "product.vela-a8.display-name.ko-KR"
+          ],
+          "elements": [
+            {
+              "id": "product.naming-rules",
+              "authority": "binding"
+            },
+            {
+              "id": "product.vela-a8.display-name.ko-KR",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "technical",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "technical.assist-configurations"
+          ],
+          "elements": [
+            {
+              "id": "technical.assist-configurations",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.city-c2: out of scope",
+            "dependency evidence.e06-c2-frame-recycled-content: out of scope",
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: out of scope",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "legal-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh",
+            "rules.no-partner-endorsement-wording"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            },
+            {
+              "id": "rules.no-partner-endorsement-wording",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Review meeting of 2026-10-15 took place; the written outcome has not been circulated. Until then the grant of 2024-04 applies unchanged.",
+            "Conflict unresolved: production sheet PS-0514 sets 6 pt for the German F4 service-carton legal text, packaging standard PK-21 sets 7 pt. Until Brand Operations rules, the binding packaging standard (7 pt) applies.",
+            "UK battery take-back information panel wording is pending with Commercial Legal (expected Q4 2026). Do not invent panel text; use the current EU panel as a placeholder marked for review.",
+            "Image rights for the ORBITAL MESH commuter portrait series are unknown; Rights Counsel has no release on file. Do not use the images until a release exists.",
+            "Licence terms for the brand typeface Supa Grotesk (webfont and third-party agency use) are not documented in this world. Agencies obtain fonts via Brand Operations."
+          ]
+        },
+        {
+          "id": "market-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "market.kr"
+          ],
+          "elements": [
+            {
+              "id": "market.kr",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not).",
+            "Future-valid record; not usable before 2027-01-01.",
+            "Anecdotal dealer council feedback, not sell-out data.",
+            "Do not cite externally; ratio is not validated by Sales Operations."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "sales-presentation-de-node.yaml",
+      "profile": "task.prepare.sales-presentation",
+      "scope": {
+        "markets": [
+          "DE"
+        ],
+        "locales": [
+          "de-DE"
+        ],
+        "jurisdictions": [
+          "DE"
+        ],
+        "audiences": [
+          "fleet-operator"
+        ],
+        "productFamilies": [
+          "node"
+        ],
+        "channels": [
+          "presentation"
+        ],
+        "outputTypes": [
+          "sales-presentation"
+        ]
+      },
+      "expectation": "German DOCKGRID N6 fleet presentation. C09, C14 and C16 applicable with their dependencies; VIAFORMA grant and C15 rejected as expired; Munich tender rumour rejected (unverified, cargo scope).",
+      "profileStatus": "approved",
+      "profileEcho": {
+        "id": "task.prepare.sales-presentation",
+        "version": "1.0.0",
+        "governanceStatus": "approved"
+      },
+      "requirements": [
+        {
+          "id": "presentation-rules",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "sales.presentation-rules"
+          ],
+          "elements": [
+            {
+              "id": "sales.presentation-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "product-facts",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "product.dockgrid-n6",
+            "product.market-release-26-3"
+          ],
+          "elements": [
+            {
+              "id": "product.dockgrid-n6",
+              "authority": "binding"
+            },
+            {
+              "id": "product.market-release-26-3",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "No recycled-content claim is released for C1 DAILY; the C2 frame claim must not be carried over.",
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Embargoed until the signed range release; no external use before 2027-03-01."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c02-registered-owners",
+            "claim.c03-second-mile-revenue-share",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c09-n6-six-batteries",
+            "claim.c14-orbital-mesh-collaboration",
+            "claim.c16-n6-pilot-availability"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c02-registered-owners",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c03-second-mile-revenue-share",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c09-n6-six-batteries",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c14-orbital-mesh-collaboration",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c16-n6-pilot-availability",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.city-c2: out of scope",
+            "dependency evidence.e06-c2-frame-recycled-content: out of scope",
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency technical.assist-configurations: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.pico-g1: out of scope",
+            "dependency evidence.e08-g1-folding: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging."
+          ],
+          "rejectedCaveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "evidence",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "evidence.e01-market-release",
+            "evidence.e02-registered-owners",
+            "evidence.e03-revenue-share-second-mile",
+            "evidence.e04-emissions-target",
+            "evidence.e05-emissions-2025",
+            "evidence.e09-n6-bay-capacity",
+            "evidence.e12-de-workshop-count",
+            "evidence.e13-circular-practice-review-2024",
+            "evidence.e14-orbital-mesh-circular",
+            "evidence.e15-viaforma-grant",
+            "evidence.e16-n6-pilot-availability"
+          ],
+          "elements": [
+            {
+              "id": "evidence.e01-market-release",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e02-registered-owners",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e03-revenue-share-second-mile",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e04-emissions-target",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e05-emissions-2025",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e09-n6-bay-capacity",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e12-de-workshop-count",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e13-circular-practice-review-2024",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e14-orbital-mesh-circular",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e15-viaforma-grant",
+              "authority": "binding"
+            },
+            {
+              "id": "evidence.e16-n6-pilot-availability",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "address-form",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.address.b2b-de"
+          ],
+          "elements": [
+            {
+              "id": "communication.address.b2b-de",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "sales-process",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "sales.fleet-enquiry-process",
+            "sales.presentation-rules"
+          ],
+          "elements": [
+            {
+              "id": "sales.fleet-enquiry-process",
+              "authority": "binding"
+            },
+            {
+              "id": "sales.presentation-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "partner-grants",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "audience",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "audience.fleet-operator"
+          ],
+          "elements": [
+            {
+              "id": "audience.fleet-operator",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "competitor-context",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "competitor.landscape.de",
+            "competitor.landscape.fleet-charging"
+          ],
+          "elements": [
+            {
+              "id": "competitor.landscape.de",
+              "authority": "informational"
+            },
+            {
+              "id": "competitor.landscape.fleet-charging",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [
+            "Internal planning view; competitor positioning statements are synthetic and not market research.",
+            "Voltbay Systems is a fictional company created for this fixture."
+          ],
+          "rejectedCaveats": [
+            "Internal planning view; no sell-out or share data behind it.",
+            "Internal planning view; synthetic.",
+            "Unverified dealer hearsay; no public source. Not to be used in sales arguments or planning documents as fact.",
+            "Unverified; tender documents not seen. Professional Systems to confirm via the procurement portal."
+          ]
+        }
+      ],
+      "blocked": false
+    },
+    {
+      "request": "social-video-at-instagram-glide.yaml",
+      "profile": "task.create.social-video",
+      "scope": {
+        "markets": [
+          "AT"
+        ],
+        "locales": [
+          "de-AT"
+        ],
+        "jurisdictions": [
+          "AT"
+        ],
+        "audiences": [
+          "consumer"
+        ],
+        "productFamilies": [
+          "glide"
+        ],
+        "channels": [
+          "instagram"
+        ]
+      },
+      "expectation": "Draft profile resolved for authoring only. PICO social campaign project and C08 applicable; ORBITAL MESH grant present but its value forbids Instagram use (content-level, not scope-level).",
+      "profileStatus": "draft",
+      "profileEcho": {
+        "id": "task.create.social-video",
+        "version": "0.2.0",
+        "governanceStatus": "draft"
+      },
+      "requirements": [
+        {
+          "id": "social-rules",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "communication.social-rules"
+          ],
+          "elements": [
+            {
+              "id": "communication.social-rules",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "brand-signature",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "brand.signature.master"
+          ],
+          "elements": [
+            {
+              "id": "brand.signature.master",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "campaign-project",
+          "required": true,
+          "satisfied": true,
+          "elementIds": [
+            "project.social-campaign-pico-2026"
+          ],
+          "elements": [
+            {
+              "id": "project.social-campaign-pico-2026",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": [
+            "Unresolved endorsement request; any public mention requires Corporate Affairs sign-off.",
+            "Embargoed; no external mention before the signed range release."
+          ]
+        },
+        {
+          "id": "claims",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "claim.c01-twelve-markets",
+            "claim.c04-emissions-target-2030",
+            "claim.c05-emissions-2025-result",
+            "claim.c08-g1-folds-three-steps"
+          ],
+          "elements": [
+            {
+              "id": "claim.c01-twelve-markets",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c04-emissions-target-2030",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c05-emissions-2025-result",
+              "authority": "binding"
+            },
+            {
+              "id": "claim.c08-g1-folds-three-steps",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [
+            "dependency product.city-c2: out of scope",
+            "dependency evidence.e06-c2-frame-recycled-content: out of scope",
+            "dependency legal.fr-material-clause: out of scope",
+            "dependency product.vela-a8: out of scope",
+            "dependency technical.assist-configurations: out of scope",
+            "dependency evidence.e07-a8-range-test: out of scope",
+            "dependency product.dockgrid-n6: out of scope",
+            "dependency technical.f4-b2-battery: out of scope",
+            "dependency evidence.e09-n6-bay-capacity: out of scope",
+            "dependency product.field-f4: out of scope",
+            "dependency evidence.e10-f4-warranty-terms: out of scope",
+            "dependency evidence.e11-us-c2-warranty-terms: out of scope",
+            "dependency evidence.e12-de-workshop-count: out of scope",
+            "dependency legal.partner-grant.viaforma: expired or not yet valid at 2026-10-21T12:00:00Z",
+            "dependency evidence.e16-n6-pilot-availability: out of scope",
+            "dependency evidence.e17-f4-mass-rating: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: out of scope",
+            "dependency evidence.e18-a8-vibration-comparator: state is unknown, not defined",
+            "dependency evidence.e18-a8-vibration-comparator: unverified authority cannot satisfy requirements"
+          ],
+          "caveats": [
+            "Not released in CH, NL, GB, US or KR. Commercial release is not road-use permission; local road-use copy is reviewed separately."
+          ],
+          "rejectedCaveats": [
+            "No consumer product uses the F4-B2 pack. Do not describe N6 as universal charging.",
+            "Do not publish, remove the word Draft or treat a media plan as substantiation.",
+            "Evidence E18 (comparator protocol and raw report) has not been delivered.",
+            "Comparator protocol and raw report not delivered to Claims Review as of 2026-10-21.",
+            "A media plan is not substantiation; nothing may be derived from this record."
+          ]
+        },
+        {
+          "id": "partner-grants",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "legal.partner-grant.orbital-mesh"
+          ],
+          "elements": [
+            {
+              "id": "legal.partner-grant.orbital-mesh",
+              "authority": "binding"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        },
+        {
+          "id": "audience",
+          "required": false,
+          "satisfied": true,
+          "elementIds": [
+            "audience.consumer-scooter-entry"
+          ],
+          "elements": [
+            {
+              "id": "audience.consumer-scooter-entry",
+              "authority": "informational"
+            }
+          ],
+          "gaps": [],
+          "caveats": [],
+          "rejectedCaveats": []
+        }
+      ],
+      "blocked": false
+    }
+  ],
+  "ok": true
+}

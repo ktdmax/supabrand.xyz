@@ -1,0 +1,4 @@
+profile: task.answer.product-question
+scope: {markets: [KR], locales: [ko-KR], jurisdictions: [KR], audiences: [consumer], productFamilies: [allroad], channels: [sales]}
+expectBlocked: false
+expectation: Korean consumer question about VELA A8. The ko-KR display-name record wins its subject; range claim C07 rejected out of scope (not KR); assist configuration note applies.

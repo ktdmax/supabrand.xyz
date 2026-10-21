@@ -1,0 +1,4 @@
+profile: task.create.product-page
+scope: {markets: [US], locales: [en-US], jurisdictions: [US], audiences: [consumer], productFamilies: [city], channels: [web]}
+expectBlocked: false
+expectation: US City product page. C11 lifetime frame warranty applicable only here; optional pricing unsatisfied (price list covers core EU/CH markets only).

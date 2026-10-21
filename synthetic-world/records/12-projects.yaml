@@ -1,0 +1,201 @@
+# SYNTHETIC TEST DATA. Project records. Dates follow the existing fixture where it defines them; everything else is invented.
+elements:
+- id: project.campaign-ac-26
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {markets: [AT, DE, NL], productFamilies: [city], channels: [paid-digital, instagram]}
+  sourceRefs: ["supabrand:sources/15-campaign-toolkit-2026.md"]
+  validity: {from: "2026-08-15T00:00:00Z", to: "2026-11-01T00:00:00Z"}
+  value:
+    name: Autumn campaign AC-26
+    headline: Your city. A little closer.
+    headlineDeAt: Deine Stadt. Ein Stück näher.
+    products: [City C1 DAILY, City C2]
+    channels: Paid digital and Instagram
+    flight: 2026-08-15 to 2026-10-31
+    owner: Consumer Marketing
+    rules: No partner marks; claim C06 only with qualification; AT consumer copy uses du, DE uses Sie, NL uses je.
+  relatedTo: [project.campaign-2025-less-rush, communication.address.de-at-consumer]
+
+- id: project.campaign-2025-less-rush
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [AT, DE, NL], productFamilies: [city]}
+  sourceRefs: ["supabrand:sources/14-campaign-toolkit-2025.md"]
+  validity: {from: "2025-04-01T00:00:00Z", to: "2025-07-01T00:00:00Z"}
+  value:
+    name: Spring campaign 2025
+    headline: Less rush. More road.
+    products: [City C2]
+    flight: 2025-04-01 to 2025-06-30
+    owner: Consumer Marketing
+  annotations: [{type: note, text: "Historical campaign; the headline is not reused in 2026 material."}]
+
+- id: project.n6-pilot-at-de-2025
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {markets: [AT, DE], productFamilies: [node]}
+  sourceRefs: ["supabrand:sources/24-evidence-dossier.md", "synthetic:fleet-analytics-pilot-report-N6-2025-12"]
+  value:
+    name: DOCKGRID N6 pilot Austria and Germany 2025
+    sites: "3 (one Vienna logistics depot, one Munich facility yard, one Berlin delivery hub; synthetic)"
+    bays: 18
+    period: 2025-09-01 to 2025-11-29
+    outcome: 99.2% charging-bay availability including planned downtime (claim C16); two firmware updates during the pilot.
+    status: Completed; case study released February 2026.
+  relatedTo: [claim.c16-n6-pilot-availability, evidence.e16-n6-pilot-availability]
+
+- id: project.trade-show-de-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {markets: [DE], channels: [trade-show], audiences: [fleet-operator, facilities-manager, procurement, dealer, press]}
+  sourceRefs: ["synthetic:event-brief-professional-mobility-fair-2026", "supabrand:sources/23-regional-retail-production-form.md"]
+  validity: {from: "2026-06-01T00:00:00Z", to: "2026-10-01T00:00:00Z"}
+  value:
+    name: Professional mobility trade fair, Germany, September 2026
+    date: 2026-09-22 to 2026-09-24 (synthetic fair)
+    exhibits: [FIELD F4 demo fleet, "DOCKGRID N6 panel (job RP-088, trade-show panel, DE, 2026-09-20)"]
+    partners: ORBITAL MESH mark on the B2B case-study panel within the grant; no VIAFORMA.
+    status: Completed.
+  relatedTo: [legal.partner-grant.orbital-mesh, claim.c16-n6-pilot-availability]
+
+- id: project.website-relaunch-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {channels: [web, ecommerce]}
+  sourceRefs: ["synthetic:web-relaunch-brief-2026", "supabrand:sources/04-digital-design-system.md"]
+  validity: {from: "2026-03-01T00:00:00Z", to: "2027-01-01T00:00:00Z"}
+  value:
+    name: Website relaunch 2026 (supabrand.xyz)
+    goal: Single product-page template for 13 locales with claim qualifications rendered in-section; market terms pages per jurisdiction.
+    milestones: {designFreeze: "2026-05-15", dachAndFrGoLive: "2026-09-01", remainingLocales: "2026-12-01"}
+    status: In progress; DACH and FR live, remaining locales in build.
+    owner: Digital Experience
+  relatedTo: [technical.web-qualification-rendering, project.second-mile-de-network-2026]
+
+- id: project.second-mile-de-network-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {markets: [DE]}
+  sourceRefs: ["supabrand:sources/09-second-mile-communication.md", "synthetic:service-operations-network-plan-DE-2026"]
+  validity: {from: "2026-01-01T00:00:00Z", to: "2027-01-01T00:00:00Z"}
+  value:
+    name: SECOND MILE workshop network expansion Germany 2026
+    baseline: 86 participating workshops at 31 March 2026 (claim C12)
+    target: 110 workshops by year end 2026 (internal target, not a claim)
+    owner: Service Operations
+    status: Active.
+  relatedTo: [claim.c12-de-workshop-network]
+
+- id: project.social-campaign-pico-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {markets: [AT, DE, FR, IT, ES, PL, CZ], productFamilies: [glide], channels: [instagram, tiktok]}
+  sourceRefs: ["supabrand:sources/05-social-media-guidelines.md", "synthetic:social-brief-pico-2026-09"]
+  validity: {from: "2026-09-15T00:00:00Z", to: "2026-12-16T00:00:00Z"}
+  value:
+    name: PICO G1 social campaign 'Three steps' autumn 2026
+    channels: Instagram Reels and TikTok, 15 to 30 second videos
+    message: Folding in three steps while stationary; everyday last-kilometre use
+    rules: No partner marks (grant excludes social), no riding-while-folding footage, no speed wording, road-use text per market.
+    owner: Consumer Marketing
+  relatedTo: [claim.c08-g1-folds-three-steps, legal.partner-grant.orbital-mesh]
+
+- id: project.sales-enablement-pro-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {productFamilies: [cargo, node]}
+  sourceRefs: ["synthetic:professional-systems-playbook-2026"]
+  validity: {from: "2026-04-01T00:00:00Z", to: null}
+  value:
+    name: Professional Systems sales enablement 2026
+    deliverables: ["Sales presentation master (DE, EN, FR)", N6 installation FAQ, F4 warranty one-pager, pilot case study N6]
+    status: Presentation master and case study released; FAQ in review.
+    owner: Professional Systems with Brand Operations
+  relatedTo: [sales.presentation-rules, sales.fleet-enquiry-process]
+
+- id: project.fr-scooter-pilot-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {markets: [FR], productFamilies: [glide]}
+  sourceRefs: ["synthetic:pilot-agreement-lyon-2026"]
+  validity: {from: "2026-08-01T00:00:00Z", to: "2027-02-01T00:00:00Z"}
+  value:
+    name: Shared-scooter pilot Lyon 2026
+    partner: A regional shared-mobility operator (fictional)
+    units: 40 PICO G1
+    period: 2026-08-01 to 2027-01-31
+    status: Running; interim read-out unverified.
+    owner: Fleet Analytics with Market office France
+  relatedTo: [research.fleet-pilot-fr-scooter-2026]
+
+- id: project.pl-municipal-pilot-2026
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [PL], productFamilies: [cargo]}
+  sourceRefs: ["synthetic:public-affairs-notes-2026"]
+  validity: {from: "2026-09-01T00:00:00Z", to: null}
+  value:
+    name: Municipal cargo pilot discussion Kraków 2026
+    status: Pilot proposal submitted; the municipality's request to be named as endorsing partner is pending with Corporate Affairs and Rights Counsel.
+    rule: No municipal endorsement wording until a signed release exists.
+  caveats: ["Unresolved endorsement request; any public mention requires Corporate Affairs sign-off."]
+  relatedTo: [audience.municipal-planner]
+
+- id: project.vela-a9-launch-2027
+  family: context
+  kind: project
+  domain: project
+  nature: knowledge
+  state: defined
+  authority: binding
+  scope: {productFamilies: [allroad]}
+  sourceRefs: ["synthetic:product-council-pre-release-PN-271"]
+  validity: {from: "2026-10-01T00:00:00Z", to: null}
+  value:
+    name: VELA A9 launch 2027
+    plan: Pre-release fact sheet valid from 2027-03-01; launch markets AT, DE, CH, FR, IT, NL; press day planned for March 2027.
+    status: Planning; embargoed.
+    owner: Product Council with Consumer Marketing
+  caveats: ["Embargoed; no external mention before the signed range release."]
+  relatedTo: [product.vela-a9]

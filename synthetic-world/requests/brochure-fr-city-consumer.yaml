@@ -1,0 +1,4 @@
+profile: task.create.brochure
+scope: {markets: [FR], locales: [fr-FR], jurisdictions: [FR], audiences: [consumer], productFamilies: [city], channels: [print], outputTypes: [brochure]}
+expectBlocked: false
+expectation: French consumer City brochure. The FR override claim.c06-c2-frame-recycled.fr wins the subject over the global C06 and pulls in legal.fr-material-clause as a dependency.

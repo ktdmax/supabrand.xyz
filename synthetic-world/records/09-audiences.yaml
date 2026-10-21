@@ -1,0 +1,111 @@
+# SYNTHETIC TEST DATA. Audience records. Personas are invented.
+elements:
+- id: audience.consumer-city-commuter
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [consumer], productFamilies: [city]}
+  sourceRefs: ["synthetic:consumer-insights-personas-2026", "supabrand:sources/02-brand-letter-2026.md"]
+  value:
+    name: Urban commuter
+    description: 28 to 55, lives in a city of more than 200,000 inhabitants, rides 5 to 15 km per day, values service access, theft protection and a reliable frame over top speed.
+    messaging: Lead with everyday room to move (Spielraum), SECOND MILE service and the frame warranty; avoid performance superlatives.
+    products: City C1 DAILY, City C2
+  relatedTo: [research.owner-survey-2026, brand.purpose]
+
+- id: audience.consumer-allroad-explorer
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [consumer], productFamilies: [allroad]}
+  sourceRefs: ["synthetic:consumer-insights-personas-2026", "supabrand:sources/11-vela-product-expression.md"]
+  value:
+    name: Considered explorer
+    description: 35 to 65, weekend and holiday riding, higher disposable income, compares range and comfort, reads specifications.
+    messaging: VELA tone is calm and precise; the range claim C07 appears with its qualification; no vibration claim until evidence exists.
+    products: VELA A8
+  relatedTo: [claim.c07-a8-range, claim.c18-a8-vibration-draft]
+
+- id: audience.consumer-scooter-entry
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [consumer], productFamilies: [glide]}
+  sourceRefs: ["supabrand:sources/12-pico-consumer-guide.md", "synthetic:consumer-insights-personas-2026"]
+  value:
+    name: Last-kilometre rider
+    description: Adults combining public transport with a short scooter leg; price-sensitive; wants simple folding and carrying.
+    messaging: Entry-level means price and specification, never age; folding is three steps, never seconds; road-use rules per market.
+    products: PICO G1
+  relatedTo: [claim.c08-g1-folds-three-steps, legal.road-use-review]
+
+- id: audience.fleet-operator
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [fleet-operator, procurement], productFamilies: [cargo, node]}
+  sourceRefs: ["supabrand:sources/13-professional-field-dockgrid.md", "synthetic:professional-systems-buyer-notes-2026"]
+  value:
+    name: Fleet operations lead
+    description: Runs 10 to 300 cargo cycles for delivery, municipal or facility services; measures availability, cost per kilometre and downtime; buys through procurement with a legal review.
+    messaging: Evidence-led; total permissible mass, warranty terms, pilot availability with qualifications; no consumer tone.
+    products: FIELD F4, DOCKGRID N6
+  relatedTo: [claim.c16-n6-pilot-availability, claim.c10-f4-frame-warranty]
+
+- id: audience.facilities-manager
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [facilities-manager, installation-partner], productFamilies: [node]}
+  sourceRefs: ["synthetic:professional-systems-buyer-notes-2026"]
+  value:
+    name: Site and facilities manager
+    description: Responsible for building power, fire safety and access; needs installation survey, power requirements and commissioning steps before approving a DOCKGRID site.
+    messaging: Lead with installation handbook facts; never promise bay counts before the survey.
+    products: DOCKGRID N6
+  relatedTo: [technical.n6-installation]
+
+- id: audience.dealer
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [dealer]}
+  sourceRefs: ["synthetic:sales-enablement-dealer-notes-2026"]
+  value:
+    name: Partner dealer
+    description: Independent bicycle retailer carrying SUPABRAND alongside competing brands; needs range-release facts, prices, claim wording with qualifications and SECOND MILE workshop terms.
+    messaging: Formal address in all German-language dealer material; provide the claim and its qualification together.
+  relatedTo: [sales.dealer-programme, communication.address.b2b-de]
+
+- id: audience.municipal-planner
+  family: context
+  kind: persona
+  domain: audience
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {audiences: [municipal-planner]}
+  sourceRefs: ["synthetic:public-affairs-notes-2026"]
+  value:
+    name: Municipal mobility planner
+    description: City or regional planner evaluating pilots for shared scooters, cargo logistics hubs and charging nodes; sensitive to endorsement wording and procurement neutrality.
+    messaging: Factual pilot results with qualifications; no municipal endorsement wording without a signed release.
+  relatedTo: [project.pl-municipal-pilot-2026, project.fr-scooter-pilot-2026]

@@ -1,0 +1,29 @@
+# SYNTHETIC TEST DATA. OBDS 4.2.0 Task Profile. DRAFT: not approved, must not be bound by a consumer.
+kind: obds-task-profile
+schemaVersion: "4.2.0"
+id: task.create.campaign
+version: 0.1.0
+description: Knowledge for campaign copy in one market and channel. Draft; Consumer Marketing has not signed off the requirement list.
+governance:
+  status: draft
+requirements:
+- id: campaign-project
+  required: true
+  match: {domain: [project], kind: [project]}
+- id: brand-signature
+  required: true
+  match: {subject: [brand.signature.master]}
+- id: claims
+  required: true
+  match: {domain: [claim], kind: [claim]}
+- id: address-form
+  required: true
+  match: {subject: [communication.address]}
+- id: audience
+  required: false
+  match: {domain: [audience]}
+  minAuthority: informational
+- id: competitor-context
+  required: false
+  match: {domain: [competitor]}
+  minAuthority: informational

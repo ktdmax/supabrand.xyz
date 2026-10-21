@@ -1,0 +1,4 @@
+profile: task.evaluate.claim
+scope: {markets: [DE], locales: [de-DE], jurisdictions: [DE], audiences: [consumer], productFamilies: [allroad], channels: [paid-digital]}
+expectBlocked: false
+expectation: Evaluate VELA A8 statements for German paid media. C07 applicable with E07; C18 rejected (unverified, draft governance, evidence state unknown).

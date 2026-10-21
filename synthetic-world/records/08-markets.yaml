@@ -1,0 +1,268 @@
+# SYNTHETIC TEST DATA. Market context and pricing. Market descriptions, channel mixes and prices are invented; real city, country and currency names are used only as references.
+elements:
+- id: market.at
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [AT]}
+  sourceRefs: ["synthetic:market-fact-sheet-AT-2026"]
+  value:
+    name: Austria (home market)
+    currency: EUR
+    locale: de-AT
+    products: City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1, DOCKGRID N6
+    channels: Dealer network (around 60 partner dealers, synthetic), own ecommerce, Vienna flagship store (synthetic), B2B direct for FIELD and DOCKGRID
+    notes: Strong urban commuter demand in Vienna and Graz; municipal fleet tenders are a growing segment. Consumer tone is informal (du).
+  relatedTo: [communication.address.de-at-consumer, sales.dealer-programme.at]
+
+- id: market.de
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [DE]}
+  sourceRefs: ["supabrand:sources/16-germany-market-guide.md", "synthetic:market-fact-sheet-DE-2026"]
+  value:
+    name: Germany (largest market by revenue, synthetic)
+    currency: EUR
+    locale: de-DE
+    products: City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1, DOCKGRID N6
+    channels: Dealer network, own ecommerce, leasing partners via employer bike schemes (synthetic), B2B direct, SECOND MILE workshops (86 at 31 March 2026)
+    notes: Formal address (Sie) in all consumer copy. Dealers expect a trade presentation per range release. Munich is the Professional Systems service hub.
+  relatedTo: [claim.c12-de-workshop-network, communication.address.de-de]
+
+- id: market.ch
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [CH]}
+  sourceRefs: ["synthetic:market-fact-sheet-CH-2026"]
+  value:
+    name: Switzerland
+    currency: CHF
+    locales: [de-CH, fr-CH, it-CH]
+    products: City C1 DAILY, City C2, VELA A8, FIELD F4, DOCKGRID N6 (no PICO G1)
+    channels: Dealer network via importer partner, own ecommerce in CHF, B2B direct from Zurich office
+    notes: Swiss German uses ss instead of ß and formal address. Price lists in CHF; no EUR prices shown.
+  relatedTo: [communication.address.de-ch, market.pricing-2026]
+
+- id: market.fr
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [FR]}
+  sourceRefs: ["synthetic:market-fact-sheet-FR-2026", "supabrand:sources/25-market-language-desk.md"]
+  value:
+    name: France
+    currency: EUR
+    locale: fr-FR
+    products: City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1, DOCKGRID N6
+    channels: Selected dealers in Paris, Lyon, Bordeaux and Nantes; own ecommerce; B2B direct from Paris office; Lyon service hub
+    notes: Vous in all copy. Material-content statements require the measurement clause in the same section. Shared-scooter pilot in Lyon (2026).
+  relatedTo: [legal.fr-material-clause, project.fr-scooter-pilot-2026]
+
+- id: market.it
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [IT]}
+  sourceRefs: ["supabrand:sources/17-italy-market-guide.md", "synthetic:market-fact-sheet-IT-2026"]
+  value:
+    name: Italy
+    currency: EUR
+    locale: it-IT
+    products: City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1, DOCKGRID N6
+    channels: Dealer network in the north (Milan, Turin, Bologna), own ecommerce, B2B from Milan office
+    notes: Consumer tone uses tu. Signature it-IT "La strada, a modo tuo.".
+
+- id: market.nl
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [NL]}
+  sourceRefs: ["synthetic:market-fact-sheet-NL-2026"]
+  value:
+    name: Netherlands
+    currency: EUR
+    locale: nl-NL
+    products: City C1 DAILY, City C2, VELA A8, FIELD F4, DOCKGRID N6 (no PICO G1)
+    channels: Dealer network, own ecommerce, Utrecht fleet service hub, strong employer-lease channel (synthetic)
+    notes: Highly competitive urban bicycle market; campaign AC-26 runs here alongside AT and DE. Dutch copy uses informal je.
+  relatedTo: [competitor.landscape.nl, project.campaign-ac-26]
+
+- id: market.es
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [ES]}
+  sourceRefs: ["synthetic:market-fact-sheet-ES-2026"]
+  value:
+    name: "Spain"
+    currency: "EUR"
+    locale: "es-ES"
+    products: "City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1 (no DOCKGRID N6)"
+    channels: "Importer-led dealer network, own ecommerce"
+    notes: "Barcelona and Madrid focus; no DOCKGRID installations yet."
+
+- id: market.pl
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [PL]}
+  sourceRefs: ["synthetic:market-fact-sheet-PL-2026"]
+  value:
+    name: "Poland"
+    currency: "PLN"
+    locale: "pl-PL"
+    products: "City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1 (no DOCKGRID N6)"
+    channels: "Importer-led dealers, own ecommerce in PLN"
+    notes: "Municipal pilot discussion in Kraków (endorsement request pending)."
+  relatedTo: [project.pl-municipal-pilot-2026]
+
+- id: market.cz
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [CZ]}
+  sourceRefs: ["synthetic:market-fact-sheet-CZ-2026"]
+  value:
+    name: "Czech Republic"
+    currency: "CZK"
+    locale: "cs-CZ"
+    products: "City C1 DAILY, City C2, VELA A8, FIELD F4, PICO G1 (no DOCKGRID N6)"
+    channels: "Dealers around Prague and Brno, own ecommerce in CZK"
+    notes: "Brno assembly site supports factory visits for fleet customers (synthetic)."
+
+- id: market.gb
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [GB]}
+  sourceRefs: ["synthetic:market-fact-sheet-GB-2026"]
+  value:
+    name: "United Kingdom"
+    currency: "GBP"
+    locale: "en-GB"
+    products: "City C1 DAILY, City C2, VELA A8, FIELD F4, DOCKGRID N6 (no PICO G1)"
+    channels: "London office, selected dealers, own ecommerce in GBP, B2B direct"
+    notes: "Scooter not released; battery take-back panel wording pending. Prices in GBP include VAT."
+  relatedTo: [legal.uk-battery-take-back-panel, legal.road-use-review]
+
+- id: market.us
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [US]}
+  sourceRefs: ["synthetic:market-fact-sheet-US-2026"]
+  value:
+    name: "United States"
+    currency: "USD"
+    locale: "en-US"
+    products: "City C1 DAILY, City C2, VELA A8 (no FIELD F4, PICO G1 or DOCKGRID N6)"
+    channels: "Portland office, direct-to-consumer ecommerce, a few West Coast dealers"
+    notes: "Class 1 configuration; C11 lifetime frame warranty applies here only; no range claim C07."
+  relatedTo: [claim.c11-us-c2-lifetime-frame-warranty, technical.assist-configurations]
+
+- id: market.kr
+  family: context
+  kind: market-profile
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: informational
+  scope: {markets: [KR]}
+  sourceRefs: ["supabrand:sources/18-korea-market-guide.md", "synthetic:market-fact-sheet-KR-2026"]
+  value:
+    name: "South Korea"
+    currency: "KRW"
+    locale: "ko-KR"
+    products: "City C1 DAILY, City C2, VELA A8 (no FIELD F4, PICO G1 or DOCKGRID N6)"
+    channels: "Seoul office with one distribution partner, marketplace ecommerce"
+    notes: "Consumer display name SUPABRAND 벨라 A8; masterbrand stays Latin script. No range claim C07."
+  relatedTo: [product.vela-a8.display-name.ko-KR]
+
+- id: market.pricing-2026
+  family: context
+  kind: price-list
+  domain: market
+  nature: fact
+  state: defined
+  authority: binding
+  scope: {markets: [AT, DE, CH, FR, IT, NL], audiences: [consumer, dealer]}
+  sourceRefs: ["synthetic:price-list-core-markets-2026-07"]
+  validity: {from: "2026-07-01T00:00:00Z", to: "2027-01-01T00:00:00Z"}
+  value:
+    name: Recommended retail prices, core markets, range release 26.3
+    cityC1Daily: {EUR: 2290, CHF: 2390}
+    cityC2: {EUR: 2990, CHF: 3090}
+    velaA8: {EUR: 4490, CHF: 4690}
+    picoG1: {EUR: 649, CHF: null}
+    basis: Incl. VAT of the respective market; FIELD F4 and DOCKGRID N6 are quoted per contract.
+  caveats: ["Synthetic prices; dealers may deviate. CH prices only where the product is released in CH (PICO G1 is not)."]
+
+- id: market.pricing-2027
+  subject: market.pricing-2026
+  family: context
+  kind: price-list
+  domain: market
+  nature: fact
+  state: defined
+  authority: binding
+  scope: {markets: [AT, DE, CH, FR, IT, NL], audiences: [consumer, dealer]}
+  sourceRefs: ["synthetic:price-list-core-markets-2027-01-draft-approved"]
+  validity: {from: "2027-01-01T00:00:00Z", to: null}
+  value:
+    name: Recommended retail prices, core markets, from 1 January 2027
+    cityC1Daily: {EUR: 2390, CHF: 2490}
+    cityC2: {EUR: 3090, CHF: 3190}
+    velaA8: {EUR: 4590, CHF: 4790}
+    picoG1: {EUR: 679, CHF: null}
+    basis: Incl. VAT of the respective market; approved in advance, effective 2027-01-01.
+  caveats: ["Future-valid record; not usable before 2027-01-01."]
+
+- id: market.dealer-observation.de-q3-2026
+  family: context
+  kind: observation
+  domain: market
+  nature: knowledge
+  state: defined
+  authority: unverified
+  scope: {markets: [DE]}
+  sourceRefs: ["synthetic:dealer-council-minutes-DE-2026-09"]
+  validity: {from: "2026-09-20T00:00:00Z", to: null}
+  value:
+    observation: Several German dealers report that City C2 demand in Q3 2026 outpaced C1 DAILY by roughly two to one, which they attribute to the frame warranty and the recycled-content message.
+  caveats: ["Anecdotal dealer council feedback, not sell-out data.", "Do not cite externally; ratio is not validated by Sales Operations."]
+  relatedTo: [research.owner-survey-2026]

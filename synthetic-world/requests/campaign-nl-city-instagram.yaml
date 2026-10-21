@@ -1,0 +1,5 @@
+profile: task.create.campaign
+draftOk: true
+scope: {markets: [NL], locales: [nl-NL], jurisdictions: [NL], audiences: [consumer], productFamilies: [city], channels: [instagram]}
+expectBlocked: false
+expectation: Draft profile resolved for authoring only. Campaign AC-26 applicable in NL during its flight; NL competitor landscape and rumour visible (rumour rejected as unverified).
