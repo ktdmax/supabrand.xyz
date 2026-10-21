@@ -23,9 +23,6 @@ The presentation is a visual introduction, not a replacement for specialist appr
 
 Twelve example markets are covered, with thirteen working locales. English, German, French, Italian and Korean editorial material is included. Portfolio presence does not mean every model is sold in every market.
 
-## Synthetic knowledge world (OBDS 4.2.0)
-`synthetic-world/` turns this library into a machine-readable cassette for brand-aware LLM tooling: 142 OBDS 4.2.0 Knowledge Records across 13 domains, 9 Task Profiles, 14 example requests, a sealed `manifest.yaml` and the validation result. It is **synthetic test data** built on the same fictional company, with deliberate edge cases (expired claims, market overrides, unverified rumours, future-valid records). Start with `synthetic-world/README.md` and `synthetic-world/inventory.md`; validation steps are in that README.
-
 ## Production notes
 Logos use original SVG path lettering; no logo font is required. Browser and office examples use system sans fallbacks. Product drawings are neutral synthetic concepts, not engineering diagrams. Photo placeholders include a brief so a production team can commission appropriate images later. Review print compositions in a browser; approve colour and production markings before manufacturing print or packaging.
 

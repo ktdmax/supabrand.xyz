@@ -1,5 +1,0 @@
-profile: task.create.product-page
-scope: {markets: [DE], locales: [de-DE], jurisdictions: [DE], audiences: [consumer], productFamilies: [city], channels: [web]}
-asOf: "2027-02-01T12:00:00Z"
-expectBlocked: false
-expectation: Same page evaluated on 2027-02-01. market.pricing-2027 now wins the pricing subject; C01 and C06 are rejected as expired; C04 and C05 still valid.

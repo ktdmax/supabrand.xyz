@@ -1,4 +1,0 @@
-profile: task.create.product-page
-scope: {markets: [CH], locales: [de-CH], jurisdictions: [CH], audiences: [consumer], productFamilies: [glide], channels: [web]}
-expectBlocked: false
-expectation: Swiss PICO G1 page. The product fact resolves (global fact) but claim C08 is rejected out of scope because G1 is not released in CH; only corporate claims remain. legal.road-use-review surfaces the release boundary.

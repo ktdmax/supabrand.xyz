@@ -1,5 +1,0 @@
-# SYNTHETIC TEST DATA. Request context for tools/build.py (profile = task-profile file stem).
-profile: task.create.brochure
-scope: {markets: [DE], locales: [de-DE], jurisdictions: [DE], audiences: [consumer], productFamilies: [city], channels: [print], outputTypes: [brochure]}
-expectBlocked: false
-expectation: German consumer City brochure. de-DE signature and Sie address win by narrower scope; C06 global wording applies (no French clause); C11 (US only) rejected out of scope.

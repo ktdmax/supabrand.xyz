@@ -1,4 +1,0 @@
-profile: task.prepare.sales-presentation
-scope: {markets: [DE], locales: [de-DE], jurisdictions: [DE], audiences: [fleet-operator], productFamilies: [node], channels: [presentation], outputTypes: [sales-presentation]}
-expectBlocked: false
-expectation: German DOCKGRID N6 fleet presentation. C09, C14 and C16 applicable with their dependencies; VIAFORMA grant and C15 rejected as expired; Munich tender rumour rejected (unverified, cargo scope).

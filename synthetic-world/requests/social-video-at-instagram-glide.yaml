@@ -1,5 +1,0 @@
-profile: task.create.social-video
-draftOk: true
-scope: {markets: [AT], locales: [de-AT], jurisdictions: [AT], audiences: [consumer], productFamilies: [glide], channels: [instagram]}
-expectBlocked: false
-expectation: Draft profile resolved for authoring only. PICO social campaign project and C08 applicable; ORBITAL MESH grant present but its value forbids Instagram use (content-level, not scope-level).

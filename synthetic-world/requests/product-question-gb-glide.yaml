@@ -1,4 +1,0 @@
-profile: task.answer.product-question
-scope: {markets: [GB], locales: [en-GB], jurisdictions: [GB], audiences: [consumer], productFamilies: [glide], channels: [sales]}
-expectBlocked: false
-expectation: UK question about PICO G1. Product fact resolves but the release record and road-use note show no GB release; C08 rejected out of scope.

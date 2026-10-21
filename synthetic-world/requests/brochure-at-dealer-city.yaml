@@ -1,4 +1,0 @@
-profile: task.create.brochure
-scope: {markets: [AT], locales: [de-AT], jurisdictions: [AT], audiences: [dealer], productFamilies: [city], channels: [print], outputTypes: [brochure]}
-expectBlocked: false
-expectation: Austrian dealer brochure. communication.address.b2b-de (Sie) wins over the global default; the de-AT consumer du rule is out of scope because the audience is dealer.
